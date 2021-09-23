@@ -15,7 +15,17 @@ public class Silinder {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double jari;
-        int tinggi;
+        double jari, tinggi, luasSelimut, luasPermukaan, volume;
+        System.out.println("Masukan jari-jari : ");
+        jari = sc.nextDouble();
+        System.out.println("Masukan tinggi : ");
+        tinggi = sc.nextDouble();
+        luasSelimut = 2 * Math.PI * jari * tinggi;
+        luasPermukaan = luasSelimut + (2 * Math.PI * (jari * jari));
+        volume = Math.PI * (jari * jari) * tinggi;
+
+        System.out.println("Luas Selimut Silinder : " + luasSelimut);
+        System.out.println("Luas Permukaan Silinder : " + luasPermukaan);
+        System.out.println("Volume Silinder : " + volume);
     }
 }
