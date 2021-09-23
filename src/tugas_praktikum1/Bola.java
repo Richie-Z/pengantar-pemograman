@@ -14,16 +14,16 @@ import java.util.Scanner;
 public class Bola {
 
     public static void main(String[] args) {
+        double jariJari, luas, volume;
         Scanner sc = new Scanner(System.in);
-        double jari, luas, volume;
 
-        System.out.println("Masukan jari-jari : ");
-        jari = sc.nextDouble();
+        System.out.println("Masukan jari-jari (r) : ");
+        jariJari = sc.nextDouble();
 
-        luas = 4 * Math.PI * (jari * jari);
-        volume = 4 / 3 * Math.PI * (jari * jari * jari);
+        luas = 4 * Math.PI * (jariJari * jariJari);
+        volume = (4 * Math.PI * (jariJari * jariJari * jariJari))/ 3;
 
-        System.out.println("Luas Bola : " + luas);
-        System.out.println("Volume Bola : " + volume);
+        System.out.printf("Luas bola :  %.2f %n", luas);
+        System.out.printf("Volume bola :  %.2f %n", volume);
     }
 }

@@ -14,20 +14,20 @@ import java.util.Scanner;
 public class Silinder {
 
     public static void main(String[] args) {
+        double jariJari, tinggi, luasSelimut, luasPermukaan, volume;
         Scanner sc = new Scanner(System.in);
-        double jari, tinggi, luasSelimut, luasPermukaan, volume;
-        
-        System.out.println("Masukan jari-jari : ");
-        jari = sc.nextDouble();
-        System.out.println("Masukan tinggi : ");
-        tinggi = sc.nextDouble();
-        
-        luasSelimut = 2 * Math.PI * jari * tinggi;
-        luasPermukaan = luasSelimut + (2 * Math.PI * (jari * jari));
-        volume = Math.PI * (jari * jari) * tinggi;
 
-        System.out.println("Luas Selimut Silinder : " + luasSelimut);
-        System.out.println("Luas Permukaan Silinder : " + luasPermukaan);
-        System.out.println("Volume Silinder : " + volume);
+        System.out.println("Masukan jari-jari (r) : ");
+        jariJari = sc.nextDouble();
+        System.out.println("Masukan tinggi (t) : ");
+        tinggi = sc.nextDouble();
+
+        luasSelimut = 2 * Math.PI * jariJari * tinggi;
+        luasPermukaan = luasSelimut + (2 * Math.PI * (jariJari * jariJari));
+        volume = Math.PI * (jariJari * jariJari) * tinggi;
+
+        System.out.printf("Luas selimut silinder : %.2f %n", luasSelimut);
+        System.out.printf("Luas permukaan silinder : %.2f %n", luasPermukaan);
+        System.out.printf("Volume silinder : %.2f %n", volume);
     }
 }

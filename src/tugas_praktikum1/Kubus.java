@@ -1,6 +1,7 @@
 package tugas_praktikum1;
 
-import java.util.Scanner; 
+import java.util.Scanner;
+
 /**
  *
  * @author Richie-PC
@@ -8,12 +9,15 @@ import java.util.Scanner;
 public class Kubus {
 
     public static void main(String[] args) {
+        double rusuk, luas, volume;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Masukan Rusuk :");
-        int rusuk = sc.nextInt();
-        int luas = 6 * (rusuk * rusuk);
-        int volume = rusuk * rusuk * rusuk;
-        System.out.println("Luas Kubus : " + luas); 
-        System.out.println("Volume Kubus : " + volume); 
+        
+        System.out.println("Masukan rusuk (s) :");
+        rusuk = sc.nextDouble();
+
+        luas = 6 * (rusuk * rusuk);
+        volume = rusuk * rusuk * rusuk;
+        System.out.printf("Luas Kubus : %.2f %n", luas);
+        System.out.printf("Volume Kubus : %.2f %n", volume);
     }
 }

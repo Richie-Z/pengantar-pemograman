@@ -14,22 +14,22 @@ import java.util.Scanner;
 public class Kerucut {
 
     public static void main(String[] args) {
+        double tinggi, jariJari, selimut, luasSelimut, luasPermukaan, volume;
         Scanner sc = new Scanner(System.in);
-        double tinggi, jari, selimut, luasSelimut, luasPermukaan, volume;
 
-        System.out.println("Masukan jari-jari : ");
-        jari = sc.nextDouble();
-        System.out.println("Masukan tinggi : ");
+        System.out.println("Masukan jari-jari (r) : ");
+        jariJari = sc.nextDouble();
+        System.out.println("Masukan tinggi (t) : ");
         tinggi = sc.nextDouble();
-        System.out.println("Masukan selimut : ");
+        System.out.println("Masukan selimut (s) : ");
         selimut = sc.nextDouble();
 
-        luasSelimut = Math.PI * jari * selimut;
-        luasPermukaan = luasSelimut + (Math.PI * (jari * jari));
-        volume = (Math.PI * (jari * jari) * tinggi) / 3;
+        luasSelimut = Math.PI * jariJari * selimut;
+        luasPermukaan = luasSelimut + (Math.PI * (jariJari * jariJari));
+        volume = (Math.PI * (jariJari * jariJari) * tinggi) / 3;
 
-        System.out.println("Luas Selimut Kerucut : " + luasSelimut);
-        System.out.println("Luas Permukaan Kerucut : " + luasPermukaan);
-        System.out.println("Volume Kerucut : " + volume);
+        System.out.printf("Luas selimut kerucut : %.2f %n", luasSelimut);
+        System.out.printf("Luas permukaan kerucut : %.2f %n", luasPermukaan);
+        System.out.printf("Volume kerucut : %.2f %n", volume);
     }
 }

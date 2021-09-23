@@ -9,17 +9,19 @@ import java.util.Scanner;
 public class Balok {
 
     public static void main(String[] args) {
+        double panjang, lebar, tinggi, luas, volume;
         Scanner sc = new Scanner(System.in);
-        int panjang, lebar, tinggi, luas, volume;
-        System.out.println("Masukan panjang : ");
-        panjang = sc.nextInt();
-        System.out.println("Masukan Lebar : ");
-        lebar = sc.nextInt();
-        System.out.println("Masukan Tinggi: ");
-        tinggi = sc.nextInt();
+        
+        System.out.println("Masukan panjang (p) : ");
+        panjang = sc.nextDouble();
+        System.out.println("Masukan lebar (l) : ");
+        lebar = sc.nextDouble();
+        System.out.println("Masukan tinggi (t) : ");
+        tinggi = sc.nextDouble();
+        
         luas = (2 * panjang * lebar) + (2 * panjang * tinggi) + (2 * lebar * tinggi);
         volume = panjang * lebar * tinggi;
-        System.out.println("Luas Balok : " + luas);
-        System.out.println("Volume Balok : " + volume);
+        System.out.printf("Luas balok : %.2f %n", luas);
+        System.out.printf("Volume balok : %.2f %n" , volume);
     }
 }
