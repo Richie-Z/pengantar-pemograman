@@ -22,8 +22,9 @@ public class Uts {
         System.out.printf("Masukan total belanja (Rupiah) = ");
         totalBelanja = sc.nextInt();
 
-        double potonganHarga;
         int hasilPotongan = 0;
+        double potonganHarga;
+
         if (umur > 16 && totalBelanja > 50000) {
             if (umur <= 25) {
                 potonganHarga = beratBadan / 10;
