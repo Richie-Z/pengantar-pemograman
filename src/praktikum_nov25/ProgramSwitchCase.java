@@ -7,7 +7,7 @@ public class ProgramSwitchCase {
         int kode;
         String namaBarang;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Masukan kode Barang [1-3] : ");
+        System.out.print("Masukan kode Barang [1-3] : ");
         kode = sc.nextInt();
         switch (kode) {
             case 1:

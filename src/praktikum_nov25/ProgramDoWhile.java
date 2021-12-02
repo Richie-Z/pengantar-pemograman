@@ -5,7 +5,7 @@ public class ProgramDoWhile {
         int bil = 10;
         do {
             System.out.println(bil);
-            --bil;
+            bil--;
         }while (bil>=1);
     }
 }
