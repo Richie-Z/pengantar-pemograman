@@ -1,2 +1,2 @@
 # pengantar-pemograman
-repository ini berisi semua tugas mata kuliah pengantar pemograman serta praktikumnya
+repository ini berisi semua **tugas** mata kuliah pengantar pemograman serta **praktikumnya**
