@@ -1,6 +1,7 @@
 package soal_cerita_nov23;
 
 import java.util.Scanner;
+
 /*
 Nama : Immanuel Richie De Harjo Zakaria
 NIM : 2142101927
@@ -15,7 +16,8 @@ public class Answer {
         System.out.print("Masukan Nama : ");
         String nama = sc.nextLine();
         System.out.println("Pilih Domisil : ");
-        umr:while (true) {
+        umr:
+        while (true) {
             System.out.println("[1] Yogyakarta");
             System.out.println("[2] Jakarta");
             System.out.println("[3] Semarang");
@@ -36,7 +38,8 @@ public class Answer {
             }
         }
         System.out.println("Pilih Jabatan : ");
-        gapok:while (true) {
+        gapok:
+        while (true) {
             System.out.println("[1] Direktur Cabang");
             System.out.println("[2] Manager");
             System.out.println("[3] Staff");

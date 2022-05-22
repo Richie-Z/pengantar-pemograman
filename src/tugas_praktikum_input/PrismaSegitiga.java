@@ -22,6 +22,10 @@ public class PrismaSegitiga extends BangunRuang {
         this.main();
     }
 
+    /**
+     * Main.
+     * return $vo
+     */
     public void main() {
         this.volume = super.luasPermukaan(this.alas, this.tinggi) * this.tinggiPrisma;
         this.luas = 2 * super.luasPermukaan(this.alas, this.tinggi) + (3 * this.alas * this.tinggiPrisma);

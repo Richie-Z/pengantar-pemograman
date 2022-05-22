@@ -19,7 +19,7 @@ public class Uts {
         umur = sc.nextInt();
         System.out.print("Masukan berat badan costumer (kg) = ");
         beratBadan = sc.nextInt();
-        System.out.printf("Masukan total belanja (Rupiah) = ");
+        System.out.print("Masukan total belanja (Rupiah) = ");
         totalBelanja = sc.nextInt();
 
         int hasilPotongan = 0;
